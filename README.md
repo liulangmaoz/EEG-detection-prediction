@@ -15,26 +15,41 @@
 
 ========
 
-你的存放文件夹/
-├── eeg_processing/              # 核心处理模块
-│   ├── __init__.py
-│   ├── core.py                  # 参数配置 / 加载数据模块
-│   ├── detection.py             # 发作时间检测模块
-│   ├── features.py              # 特征提取模块
-│   ├── preprocessing.py         # 预处理模块
-│   ├── utils.py                 # 工具函数
-│   ├── visualization.py         # 可视化图表生成
-│   └── yolo_*.py                # YOLO 视觉检测发作时间模块（不一定靠谱，可用短时能量替代）
-│
-├── LFP.py                       # 癫痫发作检测特征处理脚本
-├── LFP_non.py                   # 正常脑电检测特征处理脚本
-├── data_*.py                    # 整理特征数据的相关脚本
-├── SVM.py                       # 支持向量机训练发作检测
-├── main_detect_train.py         # CNN-LSTM 发作检测训练脚本
-├── main_predict_train.py        # DMSSTAN 发作预测训练脚本
-├── prediction.py                # 预测后处理模块
-├── yolov5su.pt                  # YOLO 模型文件
-└── requirements.txt             # 依赖包列表（可能不全，运行时按需补充）
+eeg_processing/              # 核心处理模块
+
+__init__.py
+
+core.py                  # 参数配置 / 加载数据模块
+
+detection.py             # 发作时间检测模块
+
+ features.py              # 特征提取模块
+ 
+ preprocessing.py         # 预处理模块
+ 
+utils.py                 # 工具函数
+
+visualization.py         # 可视化图表生成
+
+yolo_*.py                # YOLO 视觉检测发作时间模块（不一定靠谱，可用短时能量替代）
+
+LFP.py                       # 癫痫发作检测特征处理脚本
+
+LFP_non.py                   # 正常脑电检测特征处理脚本
+
+data_*.py                    # 整理特征数据的相关脚本
+
+ SVM.py                       # 支持向量机训练发作检测
+ 
+main_detect_train.py         # CNN-LSTM 发作检测训练脚本
+
+ main_predict_train.py        # DMSSTAN 发作预测训练脚本
+ 
+prediction.py                # 预测后处理模块
+
+yolov5su.pt                  # YOLO 模型文件
+
+ requirements.txt             # 依赖包列表（可能不全，运行时按需补充）
 
 =========
 
@@ -120,6 +135,9 @@ python LFP_non.py
 - **05发作各阶段功率谱熵.xlsx** - 功率谱熵
 
 处理代码仅供参考
+
 代码太冗长本来想用trae整理的
+
 结果没成功所以我把屎山代码传上来了
+
 懒得整理了
