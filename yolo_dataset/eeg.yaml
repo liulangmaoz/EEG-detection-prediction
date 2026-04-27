@@ -1,0 +1,10 @@
+path: D:/python/pythonProject/EEG_CNN-LSTM/yolo_dataset
+train: images/train
+val: images/val
+test: images/test
+
+nc: 1
+names:
+  0: seizure
+
+
