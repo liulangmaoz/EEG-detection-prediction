@@ -89,7 +89,7 @@ CSV文件应该包含脑电数据，我的格式如下：
   11. L_AMD
   12. L_ANT
 
-## 使用方法
+## 运行方法
 
 ### 处理癫痫发作数据
 
@@ -112,7 +112,6 @@ python LFP.py
 ```bash
 python LFP_non.py
 ```
-3. 处理结果会保存在 `results/interictal_normal/` 文件夹中
 
 ## 输出结果说明
 
