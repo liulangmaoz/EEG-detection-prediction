@@ -1,0 +1,2 @@
+#python train.py --data D:/python/pythonProject/EEG_CNN-LSTM/yolo_dataset/eeg.yaml --cfg models/yolov5s.yaml --weights yolov5s.pt --imgsz 640 --epochs 100 --batch-size 2 --device cpu
+#yolo predict model=runs/detect/train/weights/best.pt source="要检测的图片路径" save_txt=True device=cpu
