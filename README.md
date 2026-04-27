@@ -112,7 +112,6 @@ python LFP.py
 ```bash
 python LFP_non.py
 ```
-
 3. 处理结果会保存在 `results/interictal_normal/` 文件夹中
 
 ## 输出结果说明
