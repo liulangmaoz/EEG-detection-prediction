@@ -101,8 +101,6 @@ CSV文件应该包含脑电数据，我的格式如下：
 python LFP.py
 ```
 
-3. 处理结果会保存在 `results/ictal_epilepsy/` 文件夹中
-
 ### 处理正常脑电数据
 
 1. 将正常脑电CSV数据文件放入 `data/interictal_normal/` 文件夹中
