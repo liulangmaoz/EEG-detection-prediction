@@ -1381,7 +1381,6 @@ def compute_le_rosenstein(signal_data, fs, window_size_sec=10, emb_dim=6):
 
     print(f"计算配置: 窗口={window_size_sec}s, m={emb_dim}, Tau={tau}")
 
-    # 无进度条
     for i in range(num_windows):
         idx_start = i * points_per_window
         idx_end = idx_start + points_per_window
@@ -1389,7 +1388,6 @@ def compute_le_rosenstein(signal_data, fs, window_size_sec=10, emb_dim=6):
 
         try:
             le = nolds.lyap_r(segment, emb_dim=emb_dim, lag=tau, min_tsep=tau, trajectory_len=30, fit='poly')
-            le = 0.1 / le
             lle_values.append(le)
         except:
             lle_values.append(np.nan)
